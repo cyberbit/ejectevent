@@ -11,6 +11,6 @@ To install:
  - In Event Viewer, under **System**, click **Filter Current Log**. Where it says "All Event IDs", input "225".
  - Create a scheduled task for the event using **Attach Task To This Event** while in the filtered view. Click Next until an input for **Program/script** appears, and enter the following, replacing `<script>` with the full path to EjectEvent.ps1:
     ```
-    powershell -NonInteractive <script>
+    powershell -NonInteractive -Window Hidden <script>
     ```
  - Click Yes, then Finish.
